@@ -9,7 +9,7 @@
 		.header {
 			display: flex;
 			justify-content: space-between;
-			align-items: center;
+			align-items: baseline;
 		}
 
 		.logo {
@@ -17,33 +17,111 @@
 			height: 25px;
 			margin-left: 40px;
 		}
-//menu
-		.menu-mobile {
-			display: none;
-		}
 
-		.menu {
-			height: auto;
-			display: flex;
-			text-align: right;
+		//menu
+		.container-menu {
+			width: auto;
 
-			.menu__item:nth-of-type(even),
-			.menu__item:nth-of-type(odd){
-				background: none;
+			.menu-mobile {
+				display: none;
 			}
 
-			.menu__link, .menu-mobile {
-				font-size: 15px;
-			}
+			.menu {
+				position: relative;
+				height: auto;
+				width: auto;
+				left: 0;
+				top: 0;
+				display: flex;
+				text-align: right;
 
-			.menu__link {
-				display: block;
+				&.open {
+					display: flex;
+				}
 
-				&:hover {
-					border: 1px solid rgba(255,255,255,0.3);
+				.menu__item:nth-of-type(even),
+				.menu__item:nth-of-type(odd) {
+					background: none;
+				}
+
+				.menu__item {
+					position: relative;
+
+					&:nth-of-type(2):before {
+						position: absolute;
+						content: '';
+						right: 0;
+						top: 12px;
+						width: 1px;
+						height: 16px;
+						background: rgba(255, 255, 255, 0.2);
+					}
+				}
+
+
+				.menu__link, .menu-mobile {
+					font-size: 15px;
+				}
+
+				.menu__link {
+					display: block;
+
+					&:hover {
+						border: 1px solid rgba(255, 255, 255, 0.3);
+					}
 				}
 			}
 		}
 
+		.main-title {
+			margin: 215px auto 0;
+
+			h1, h4 {
+				font-size: 70px;
+
+			}
+
+			h4 {
+				font-size: 24px;
+			}
+
+			.start-trading_btn {
+				margin: 85px auto 400px;
+
+				&:hover {
+					background: darken(#00e9fa, 3%);
+				}
+			}
+		}
+
+		.float-block {
+			position: absolute;
+			bottom: -136px;
+			right: 0;
+
+			.float-block_inner {
+				flex-basis: 49.7%;
+				border: 1px solid transparent;
+
+				&:nth-of-type(1) {
+					 border-right: 1px solid #f7f7f7;
+					 border-bottom: 1px solid #f7f7f7;
+				 }
+				&:nth-of-type(2) {
+					border-left: 1px solid #f7f7f7;
+					border-bottom: 1px solid #f7f7f7;
+				}
+				&:nth-of-type(3) {
+					border-right: 1px solid #f7f7f7;
+				}
+				&:nth-of-type(4) {
+					border-left: 1px solid #f7f7f7;
+				}
+
+				@supports (display: grid) {
+					flex-basis: 50%;
+				}
+			}
+		}
 	}
 }

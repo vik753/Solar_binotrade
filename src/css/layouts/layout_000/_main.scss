@@ -14,6 +14,7 @@ $main-background-color: #fbfcfd;
 
 .main-wrapper {
 	background-color: $main-background-color;
+	position: relative;
 
 	.block {
 		width: 100%;
@@ -77,72 +78,168 @@ $main-background-color: #fbfcfd;
 		}
 
 		//Menu
-		.menu {
-			list-style-type: none;
-			height: 0;
-		}
-
-		.menu__item {
-
-			&:nth-of-type(even) {
-				background: rgba(0, 0, 0, 0.3);
-			}
-
-			&:nth-of-type(odd) {
-				background: rgba(0, 0, 0, 0.2);
-			}
-		}
-
-		.menu__link, .menu-mobile {
-			text-decoration: none;
-			text-transform: uppercase;
-			display: block;
-			padding: 10px 20px;
-			color: #fff;
-			font-size: 1rem;
-			font-weight: 400;
+		.container-menu {
 			position: relative;
-			border-radius: 4px;
-			border: 1px solid transparent;
-		}
+			width: 100%;
 
-		.menu-mobile {
-			font-weight: 600;
-			color: #fff;
-			border-radius: 0;
-			padding-left: 25px;
-
-			.arrow {
-				display: block;
-				content: '';
-				position: absolute;
-				left: 85px;
-				top: 13px;
-				width: 0;
+			.menu {
+				list-style-type: none;
 				height: 0;
-				border-left: 6px solid transparent;
-				border-right: 6px solid transparent;
-				border-top: 11px solid #fff;
-				background: none;
+			}
+
+			.menu__item {
+
+				&:nth-of-type(even) {
+					background: rgba(0, 0, 0, 0.3);
+				}
+
+				&:nth-of-type(odd) {
+					background: rgba(0, 0, 0, 0.2);
+				}
+			}
+
+			.menu__link, .menu-mobile {
+				text-decoration: none;
+				text-transform: uppercase;
+				display: block;
+				padding: 10px 20px;
+				color: #fff;
+				font-size: 1rem;
+				font-weight: 400;
+				position: relative;
+				border-radius: 4px;
+				border: 1px solid transparent;
+			}
+
+			.menu-mobile {
+				font-weight: 600;
+				color: #fff;
+				border-radius: 0;
+				padding-left: 25px;
+
+				.arrow {
+					display: block;
+					content: '';
+					position: absolute;
+					left: 85px;
+					top: 13px;
+					width: 0;
+					height: 0;
+					border-left: 6px solid transparent;
+					border-right: 6px solid transparent;
+					border-top: 11px solid #fff;
+					background: none;
+
+					&.open {
+						transform: rotate(180deg);
+					}
+				}
+			}
+
+			.menu {
+				display: none;
+				overflow: hidden;
+				position: absolute;
+				left: 0;
+				top: 40px;
+				width: 100%;
 
 				&.open {
-					transform: rotate(180deg);
+					display: block;
+					height: auto;
+					animation: menu_appear;
+					animation-duration: .3s;
+					animation-timing-function: linear;
 				}
 			}
 		}
 
-		.menu {
-			display: none;
-			overflow: hidden;
+		.main-title {
+			margin: 160px auto 0;
 
-			&.open {
+			h1, h4 {
+				font-size: 40px;
+				color: #fff;
+				text-align: center;
+				margin: 0;
+			}
+
+			h4 {
+				font-size: 16px;
+			}
+
+			.start-trading_btn {
+				background-color: #00e9fa;
+				border: none;
+				color: white;
+				padding: 16px 60px;
+				text-align: center;
+				text-decoration: none;
 				display: block;
-				height: auto;
-				animation: menu_appear;
-				animation-duration: .3s;
-				animation-timing-function: linear;
+				font-size: 16px;
+				margin: 85px auto 200px;
+				cursor: pointer;
+				border-radius: 4px;
+				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 			}
 		}
 
+		.float-block {
+			position: absolute;
+			left: 0;
+			bottom: -360px;
+			max-width: 1042px;
+			background: #fff;
+			display: flex;
+			flex-wrap: wrap;
+			padding: 0;
+
+			.float-block_inner {
+				width: 100%;
+				flex-basis: 100%;
+				border: 1px solid #f7f7f7;
+
+				p {
+					font-size: 15px;
+					max-width: 300px;
+					margin: 0 auto;
+					padding: 40px 0px 40px 64px;
+					position: relative;
+
+					span {
+						position: absolute;
+						left: 0;
+						top: 50%;
+						transform: translateY(-50%);
+						display: block;
+						width: 52px;
+						height: 52px;
+						background: url("../img/horse.png") no-repeat center;
+						background-size: contain;
+
+
+					}
+				}
+
+				&:nth-of-type(2) > p > span {
+					background: url("../img/rocket.png") no-repeat center;
+					background-size: contain;
+				}
+
+				&:nth-of-type(3) > p > span {
+					background: url("../img/arrow_up.png") no-repeat center;
+					background-size: contain;
+				}
+
+				&:nth-of-type(4) > p > span {
+					background: url("../img/profit.png") no-repeat center;
+					background-size: contain;
+				}
+			}
+		}
+	}
+
+	.block-two {
+		height: 500px;
 	}
 }

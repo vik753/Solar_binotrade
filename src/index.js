@@ -1,7 +1,8 @@
-import "./css/style.scss"
-import "./js_vendor/custom_select.js"
+import "./css/style.scss";
 
-console.log(`Hello wp99288829`);
+let device = null;
+
+//console.log(`Hello`);
 
 //menu mobile
 const menuMobile = document.getElementById('menu-mobile');
@@ -13,4 +14,13 @@ menuMobile.onclick = function (){
   menu.classList.toggle('open');
 };
 
-//
+
+//media for js
+ssm.addState({
+  id: 'mobile',
+  query: '(max-width: 768px)',
+  onEnter: function() {
+    initMobile();
+  }
+});
+
