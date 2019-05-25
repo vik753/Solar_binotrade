@@ -1,0 +1,22 @@
+//fonts
+$google-font: 'https://fonts.googleapis.com/css?family=Raleway:300,400,400i,500,600,700,800,900&display=swap';
+$raleway: 'Raleway', sans-serif;
+
+//Font-sizes
+$baseFontSize: 16px;
+$fontSizeSimpleText: 14px;
+$fontSizeButton: 13px;
+
+$maxWidth: 1020px;
+
+// Paths
+$img: "../img/";
+
+// Colors
+
+//========= for ALL===========
+* {
+  font-family: $raleway;
+  box-sizing: border-box;
+  transition: 0.3s ease;
+}

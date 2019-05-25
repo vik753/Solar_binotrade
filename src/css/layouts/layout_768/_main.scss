@@ -1,0 +1,49 @@
+.main-wrapper {
+
+	.block-one {
+
+		.logo-wrapper {
+			margin-bottom: 0;
+		}
+
+		.header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.logo {
+			width: 170px;
+			height: 25px;
+			margin-left: 40px;
+		}
+//menu
+		.menu-mobile {
+			display: none;
+		}
+
+		.menu {
+			height: auto;
+			display: flex;
+			text-align: right;
+
+			.menu__item:nth-of-type(even),
+			.menu__item:nth-of-type(odd){
+				background: none;
+			}
+
+			.menu__link, .menu-mobile {
+				font-size: 15px;
+			}
+
+			.menu__link {
+				display: block;
+
+				&:hover {
+					border: 1px solid rgba(255,255,255,0.3);
+				}
+			}
+		}
+
+	}
+}

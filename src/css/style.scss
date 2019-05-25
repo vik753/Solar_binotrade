@@ -1,0 +1,8 @@
+@import "vendor/index";
+@import "base/index";
+
+@import "layouts/layout_000/index";//main layout - mobile first!
+
+@media only screen and (min-width: 768px) {//breakpoint 768px
+  @import "layouts/layout_768/index";
+}
