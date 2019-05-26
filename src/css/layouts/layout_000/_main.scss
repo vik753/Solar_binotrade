@@ -28,6 +28,7 @@ $main-background-color: #fbfcfd;
 		background: url("../img/block1-bg.png") no-repeat center;
 		background-size: cover;
 		padding-top: 20px;
+		margin-bottom: 480px;
 		//Logo
 		.logo-wrapper {
 			display: flex;
@@ -181,6 +182,11 @@ $main-background-color: #fbfcfd;
 				cursor: pointer;
 				border-radius: 4px;
 				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+				&:active {
+					box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) inset;
+					transform: translateY(4px);
+				}
 			}
 		}
 
@@ -240,6 +246,85 @@ $main-background-color: #fbfcfd;
 	}
 
 	.block-two {
-		height: 500px;
+		width: 100%;
+		position: relative;
+
+		.tab-headers {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			align-items: center;
+			width: 100%;
+			max-width: 1040px;
+			margin: 0 auto;
+			background: #fff;
+			border-radius: 4px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+			li {
+				width: 49%;
+				padding: 22px;
+				font-size: 15px;
+				border-bottom: 2px solid transparent;
+				cursor: pointer;
+				text-align: center;
+
+				&.active {
+					color: #2e73fe;
+					border-bottom: 2px solid #2e73fe;
+				}
+			}
+		}
+
+		.tabs {
+			width: 100%;
+			padding-top: 95px;
+
+			li {
+				width: 100%;
+				display: none;
+
+				&.active {
+					display: flex;
+				}
+			}
+
+			.tab1 {
+				//display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+
+				.tab1-inner {
+					width: 100%;
+				}
+
+				.tab1-left {
+					width: 100%;
+					margin-bottom: 22px;
+
+					h2 {
+						font-size: 40px;
+					}
+
+					p {
+						font-size: 18px;
+					}
+				}
+
+				.tab1-right {
+					max-width: 425px;
+					height: auto;
+					display: flex;
+					justify-content: flex-end;
+
+					.tab1-img1 {
+						width: 425px;
+						height: 425px;
+						background: url("../img/purse.png") no-repeat center;
+						background-size: contain;
+					}
+				}
+			}
+		}
 	}
 }

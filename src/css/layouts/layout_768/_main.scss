@@ -1,6 +1,7 @@
 .main-wrapper {
 
 	.block-one {
+		margin-bottom: 300px;
 
 		.logo-wrapper {
 			margin-bottom: 0;
@@ -69,6 +70,11 @@
 					&:hover {
 						border: 1px solid rgba(255, 255, 255, 0.3);
 					}
+
+					&:active {
+						box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) inset;
+						transform: translateY(4px);
+					}
 				}
 			}
 		}
@@ -120,6 +126,41 @@
 
 				@supports (display: grid) {
 					flex-basis: 50%;
+				}
+			}
+		}
+	}
+
+	.block-two {
+		width: 100%;
+		position: relative;
+
+		.tab-headers {
+
+			li {
+				width: auto;
+				flex-basis: auto;
+
+				&:hover {
+					background: darken(#fff, 4%);
+				}
+			}
+
+
+		}
+
+		.tabs {
+
+			.tab1 {
+
+				.tab1-inner {
+					width: 49%;
+					max-width: 520px;
+				}
+
+				.tab1-left {
+					margin-bottom: 0;
+					padding-right: 11px;
 				}
 			}
 		}
