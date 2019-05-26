@@ -150,6 +150,7 @@
 		}
 
 		.tabs {
+			padding-top: 95px;
 
 			.tab1 {
 
@@ -163,6 +164,26 @@
 					padding-right: 11px;
 				}
 			}
+		}
+
+		.blue-ball {
+			top: 105px;
+			left: -36px;
+		}
+
+		.red-ball {
+			bottom: -13px;
+			right: 53%;
+		}
+
+		.baks-orange-ball {
+			top: 115px;
+			right: 53%;
+		}
+
+		.cloud-small {
+			left: 235px;
+			bottom: 0;
 		}
 	}
 }

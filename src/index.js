@@ -59,3 +59,4 @@ let tabTrigger = function (el) {
   });
   el.classList.add('active');
 }
+
