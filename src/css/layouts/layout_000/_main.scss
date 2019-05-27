@@ -404,4 +404,80 @@ $main-background-color: #fbfcfd;
 			z-index: 0;
 		}
 	}
+
+	.block-three {
+		max-width: 1290px;
+		margin: 0 auto;
+		padding: 15% 160px;
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		background: #fff;
+
+		.block-three_img {
+			width: 146px;
+			height: 27px;
+			background: url("../img/badoo.png") no-repeat center;
+			background-size: contain;
+
+
+			&:nth-of-type(2) {
+				width: 147px;
+				height: 19px;
+				background: url("../img/tesla.png") no-repeat center;
+			}
+
+			&:nth-of-type(3) {
+				width: 99px;
+				height: 26px;
+				background: url("../img/gillete.png") no-repeat center;
+			}
+
+			&:nth-of-type(4) {
+				width: 99px;
+				height: 34px;
+				background: url("../img/cocacolla.png") no-repeat center;
+			}
+
+			&:nth-of-type(5) {
+				width: 97px;
+				height: 27px;
+				background: url("../img/netflix.png") no-repeat center;
+			}
+
+			&:nth-of-type(6) {
+				width: 147px;
+				height: 33px;
+				background: url("../img/microsoft.png") no-repeat center;
+			}
+
+			&:nth-of-type(7) {
+				width: 117px;
+				height: 49px;
+				background: url("../img/disnay.png") no-repeat center;
+			}
+
+			&:nth-of-type(8) {
+				width: 136px;
+				height: 28px;
+				background: url("../img/facebook.png") no-repeat center;
+			}
+
+			&:nth-of-type(9) {
+				width: 115px;
+				height: 37px;
+				background: url("../img/google.png") no-repeat center;
+			}
+
+			&:nth-of-type(10) {
+				width: 118px;
+				height: 21px;
+				background: url("../img/toyota.png") no-repeat center;
+			}
+		}
+	}
+
+
 }

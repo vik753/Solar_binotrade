@@ -40,7 +40,7 @@ tabHeader4.onclick = function () {
 }
 
 let tabTrigger = function (el) {
-  console.log(el);
+  //console.log(el);
   tabs.forEach(function (e) {
     e.classList.remove('active');
   });
