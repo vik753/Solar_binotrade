@@ -248,6 +248,7 @@ $main-background-color: #fbfcfd;
 	.block-two {
 		width: 100%;
 		position: relative;
+		margin-bottom: 100px;
 
 		.tab-headers {
 			display: flex;
@@ -407,8 +408,8 @@ $main-background-color: #fbfcfd;
 
 	.block-three {
 		max-width: 1290px;
-		margin: 0 auto;
-		padding: 15% 160px;
+		margin: 0 auto 22px 0;
+		padding: 15% 8%;
 		position: relative;
 		display: flex;
 		flex-wrap: wrap;
@@ -417,67 +418,111 @@ $main-background-color: #fbfcfd;
 		background: #fff;
 
 		.block-three_img {
-			width: 146px;
-			height: 27px;
+			width: 46%;
+			height: 25px;
+			margin: 15px 2%;
 			background: url("../img/badoo.png") no-repeat center;
 			background-size: contain;
 
 
 			&:nth-of-type(2) {
-				width: 147px;
-				height: 19px;
 				background: url("../img/tesla.png") no-repeat center;
+				background-size: contain;
+				height: 19px;
 			}
 
 			&:nth-of-type(3) {
-				width: 99px;
-				height: 26px;
 				background: url("../img/gillete.png") no-repeat center;
+				background-size: contain;
+				height: 26px;
 			}
 
 			&:nth-of-type(4) {
-				width: 99px;
-				height: 34px;
 				background: url("../img/cocacolla.png") no-repeat center;
+				background-size: contain;
+				height: 34px;
 			}
 
 			&:nth-of-type(5) {
-				width: 97px;
-				height: 27px;
 				background: url("../img/netflix.png") no-repeat center;
+				background-size: contain;
+				height: 27px;
 			}
 
 			&:nth-of-type(6) {
-				width: 147px;
-				height: 33px;
 				background: url("../img/microsoft.png") no-repeat center;
+				background-size: contain;
+				height: 33px;
 			}
 
 			&:nth-of-type(7) {
-				width: 117px;
-				height: 49px;
 				background: url("../img/disnay.png") no-repeat center;
+				background-size: contain;
+				height: 49px;
 			}
 
 			&:nth-of-type(8) {
-				width: 136px;
-				height: 28px;
 				background: url("../img/facebook.png") no-repeat center;
+				background-size: contain;
+				height: 28px;
 			}
 
 			&:nth-of-type(9) {
-				width: 115px;
-				height: 37px;
 				background: url("../img/google.png") no-repeat center;
+				background-size: contain;
+				height: 37px;
 			}
 
 			&:nth-of-type(10) {
-				width: 118px;
-				height: 21px;
 				background: url("../img/toyota.png") no-repeat center;
+				background-size: contain;
+				height: 21px;
 			}
 		}
 	}
 
+	.block-four {
+		background: url("../img/block-four-bg.png") no-repeat -15px center;
+		background-size: cover;
+		margin-bottom: 22px;
+		height: 550px;
+		display: flex;
+		align-items: center;
+
+		.left {
+			flex-basis: 100%;
+			padding:  0;
+			color: #fff;
+
+			h2 {
+				font-size: 40px;
+			}
+
+			p {
+				font-size: 14px;
+				padding: 0;
+			}
+		}
+
+		.block-four-img1 {
+			background: url("../img/mob_phone1.png") no-repeat center;
+			background-size: 100% auto;
+			width: 18%;
+			height: 662px;
+			position: absolute;
+			top: -186px;
+			right: 27%;
+		}
+
+		.block-four-img2 {
+			background: url("../img/mob_phone2.png") no-repeat center;
+			background-size: 100% auto;
+			width: 18%;
+			height: 667px;
+			position: absolute;
+			top: -200px;
+			right: 9%;
+		}
+	}
 
 }

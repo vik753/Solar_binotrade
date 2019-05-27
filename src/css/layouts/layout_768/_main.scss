@@ -130,7 +130,7 @@
 			}
 		}
 	}
-
+//!block one
 	.block-two {
 		width: 100%;
 		position: relative;
@@ -186,4 +186,46 @@
 			bottom: 0;
 		}
 	}
+//!block two
+	.block-three {
+		padding: 15% 8%;
+
+		.block-three_img {
+			width: 13%;
+			height: 25px;
+			margin: 15px 2%;
+
+		}
+	}
+//!block three
+	.block-four {
+		background: url("../img/block-four-bg.png") no-repeat -50px center;
+		background-size: 100% auto;
+		height: 1150px;
+
+		.left {
+			flex-basis: 40%;
+			padding:  0 1% 0 10%;
+			color: #fff;
+
+			p {
+				font-size: 18px;
+				padding: 0;
+			}
+		}
+
+		.block-four-img1 {
+			width: 27%;
+			top: 185px;
+			right: 31%;
+		}
+
+		.block-four-img2 {
+			width: 27%;
+			top: 79px;
+			right: 7%;
+		}
+
+	}
+//!block four
 }
