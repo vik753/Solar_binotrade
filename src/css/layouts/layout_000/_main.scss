@@ -305,6 +305,7 @@ $main-background-color: #fbfcfd;
 
 				.tab1-left {
 					width: 100%;
+					padding: 0 22px;
 					margin-bottom: 22px;
 
 					h2 {
@@ -317,7 +318,7 @@ $main-background-color: #fbfcfd;
 				}
 
 				.tab1-right {
-					width: 425px;
+					width: 290px;
 					height: 425px;
 					display: flex;
 					justify-content: flex-end;
@@ -408,7 +409,7 @@ $main-background-color: #fbfcfd;
 
 	.block-three {
 		max-width: 1290px;
-		margin: 0 auto 22px 0;
+		margin: 0 auto 22px;
 		padding: 15% 8%;
 		position: relative;
 		display: flex;
