@@ -245,6 +245,7 @@ $main-background-color: #fbfcfd;
 		}
 	}
 
+	//!block one
 	.block-two {
 		width: 100%;
 		position: relative;
@@ -407,6 +408,7 @@ $main-background-color: #fbfcfd;
 		}
 	}
 
+	//!block two
 	.block-three {
 		max-width: 1290px;
 		margin: 0 auto 22px;
@@ -482,6 +484,7 @@ $main-background-color: #fbfcfd;
 		}
 	}
 
+	//!block three
 	.block-four {
 		background: url("../img/block-four-bg.png") no-repeat -15px center;
 		background-size: cover;
@@ -492,7 +495,7 @@ $main-background-color: #fbfcfd;
 
 		.left {
 			flex-basis: 100%;
-			padding:  0;
+			padding: 0;
 			color: #fff;
 
 			h2 {
@@ -525,9 +528,11 @@ $main-background-color: #fbfcfd;
 			right: 9%;
 		}
 	}
-	
+
+	//!block four
 	.block-five {
-		
+		margin-bottom: 120px;
+
 		h2 {
 			padding: 0 11px 20px;
 			font-size: 20px;
@@ -551,4 +556,44 @@ $main-background-color: #fbfcfd;
 		}
 	}
 
+	//!block five
+	.footer {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 165px 11px 50px;
+
+		.left {
+			flex-basis: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: flex-start;
+
+			.list {
+
+				&:first-of-type {
+				padding-right: 5px;
+				}
+
+				li {
+					padding-bottom: 11px;
+
+					&:last-of-type {
+						padding-bottom: 0;
+					}
+
+					a {
+						text-decoration: none;
+						color: #1e2945;
+						font-size: 12px;
+					}
+
+				}
+			}
+		}
+
+		.right {
+			flex-basis: 100%;
+		}
+	}
 }
