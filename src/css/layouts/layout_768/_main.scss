@@ -205,7 +205,7 @@
 	.block-four {
 		background: url("../img/block-four-bg.png") no-repeat -50px center;
 		background-size: 100% auto;
-		height: 1150px;
+		height: 1050px;
 
 		.left {
 			flex-basis: 40%;
@@ -229,7 +229,29 @@
 			top: 79px;
 			right: 7%;
 		}
-
 	}
 //!block four
+	.block-five {
+
+		h2 {
+			padding: 0 74px 22px 74px;
+			font-size: 40px;
+		}
+
+		.text-wrapper {
+			padding: 0 74px;
+			flex-wrap: nowrap;
+
+			p {
+				font-size: 18px;
+				flex-basis: auto;
+
+				&:first-of-type {
+					padding-bottom: 0;
+					padding-right: 22px;
+				}
+			}
+		}
+	}
+//!block five
 }

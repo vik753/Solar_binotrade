@@ -20,7 +20,7 @@ $main-background-color: #fbfcfd;
 		width: 100%;
 		max-width: 1440px;
 		margin: 0 auto;
-		padding: 11px;
+		padding: 0 11px 11px 11px;
 		position: relative;
 	}
 
@@ -523,6 +523,31 @@ $main-background-color: #fbfcfd;
 			position: absolute;
 			top: -200px;
 			right: 9%;
+		}
+	}
+	
+	.block-five {
+		
+		h2 {
+			padding: 0 11px 20px;
+			font-size: 20px;
+		}
+
+		.text-wrapper {
+			display: flex;
+			flex-wrap: wrap;
+			padding: 0 11px;
+
+			p {
+				text-indent: 11px;
+				text-align: justify;
+				font-size: 14px;
+				flex-basis: 100%;
+
+				&:first-of-type {
+					padding-bottom: 11px;
+				}
+			}
 		}
 	}
 
