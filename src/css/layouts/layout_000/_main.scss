@@ -1,5 +1,4 @@
-$main-background-color: #fbfcfd;
-
+//Mobile styles - loaded first
 @keyframes menu_appear {
 	0% {
 		height: 0px;
@@ -13,7 +12,7 @@ $main-background-color: #fbfcfd;
 }
 
 .main-wrapper {
-	background-color: $main-background-color;
+	background-color: #fbfcfd;
 	position: relative;
 
 	.block {
@@ -292,7 +291,6 @@ $main-background-color: #fbfcfd;
 			}
 
 			.tab1 {
-				//display: flex;
 				flex-wrap: wrap;
 				justify-content: center;
 
@@ -488,7 +486,7 @@ $main-background-color: #fbfcfd;
 	.block-four {
 		background: url("../img/block-four-bg.png") no-repeat -15px center;
 		background-size: cover;
-		margin-bottom: 22px;
+		margin-bottom: 60px;
 		height: 550px;
 		display: flex;
 		align-items: center;
@@ -531,11 +529,10 @@ $main-background-color: #fbfcfd;
 
 	//!block four
 	.block-five {
-		margin-bottom: 120px;
 
 		h2 {
 			padding: 0 11px 20px;
-			font-size: 20px;
+			font-size: 25px;
 		}
 
 		.text-wrapper {
@@ -560,19 +557,21 @@ $main-background-color: #fbfcfd;
 	.footer {
 		display: flex;
 		flex-wrap: wrap;
-		padding: 165px 11px 50px;
+		padding: 120px 11px 50px;
+		background: url("../img/footer-bg.png") no-repeat center;
+		background-size: cover;
 
 		.left {
 			flex-basis: 100%;
 			display: flex;
-			flex-wrap: wrap;
 			justify-content: space-between;
 			align-items: flex-start;
+			margin-bottom: 22px;
 
 			.list {
 
 				&:first-of-type {
-				padding-right: 5px;
+					padding-right: 5px;
 				}
 
 				li {
@@ -594,6 +593,96 @@ $main-background-color: #fbfcfd;
 
 		.right {
 			flex-basis: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: flex-start;
+
+			.inner-right {
+				display: flex;
+				margin-right: 11px;
+				margin-bottom: 11px;
+
+				.appStore_img {
+					background: url("../img/app_store.png") no-repeat top;
+					background-size: 100% auto;
+					width: 125px;
+					height: 38px;
+					margin-right: 11px;
+				}
+
+				.googplePlay_img {
+					background: url("../img/googleplay.png") no-repeat top;
+					background-size: 100% auto;
+					width: 125px;
+					height: 38px;
+				}
+			}
+
+			.inner-left {
+
+				.social {
+					display: flex;
+					margin-bottom: 40px;
+
+					a {
+						width: 40px;
+						height: 40px;
+						border-radius: 4px;
+						background: #2e73ff;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						margin-right: 5px;
+
+						&:last-of-type {
+							margin-right: 0;
+						}
+
+						&:nth-of-type(1) > span {
+							display: block;
+							background: url("../img/facebook-logo.png") no-repeat center;
+							background-size: cover;
+							width: 8px;
+							height: 16px;
+						}
+
+						&:nth-of-type(2) > span {
+							display: block;
+							background: url("../img/vk.png") no-repeat center;
+							background-size: cover;
+							width: 18px;
+							height: 10px;
+						}
+
+						&:nth-of-type(3) > span {
+							display: block;
+							background: url("../img/twitter-logo.png") no-repeat center;
+							background-size: cover;
+							width: 16px;
+							height: 13px;
+						}
+
+						&:nth-of-type(4) > span {
+							display: block;
+							background: url("../img/google-plus.png") no-repeat center;
+							background-size: cover;
+							width: 19px;
+							height: 12px;
+						}
+					}
+				}
+
+				.solar-logo {
+					a {
+						display: block;
+						background: url("../img/solar_logo.png") no-repeat center;
+						background-size: cover;
+						width: 163px;
+						height: 31px;
+					}
+				}
+			}
 		}
 	}
 }

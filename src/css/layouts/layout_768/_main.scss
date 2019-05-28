@@ -1,3 +1,4 @@
+//Desktop styles - loaded after mobile
 .main-wrapper {
 
 	.block-one {
@@ -232,6 +233,7 @@
 	}
 //!block four
 	.block-five {
+		margin-bottom: 120px;
 
 		h2 {
 			padding: 0 74px 22px 74px;
@@ -255,15 +257,15 @@
 	}
 //!block five
 	.footer {
-		display: flex;
 		flex-wrap: nowrap;
-		padding: 165px 50px 50px;
+		padding: 165px 5% 50px;
+		background-size: cover;
 
 		.left {
-			flex-basis: 70%;
-			display: flex;
-			justify-content: space-between;
-			align-items: flex-start;
+			flex-basis: 60%;
+			flex-wrap: nowrap;
+			padding-right: 32px;
+			margin-bottom: 0;
 
 			.list {
 				padding-right: 5px;
@@ -273,14 +275,10 @@
 				}
 
 				li {
-					padding-bottom: 11px;
-
-					&:last-of-type {
-						padding-bottom: 0;
-					}
 
 					&:hover {
 						transform: scale(1.1);
+						text-shadow: 2px 4px 4px rgba(0,0,0,0.4);
 
 						& > a {
 							color: #2e73fe;
@@ -296,7 +294,26 @@
 		}
 
 		.right {
-			flex-basis: 29%;
+			flex-basis: 39%;
+
+			.inner-right {
+
+				a:hover {
+					transform: translateY(-2px);
+				}
+			}
+
+			.inner-left {
+
+				a:hover {
+					box-shadow: 2px 4px 4px rgba(0,0,0,0.3);
+					transform: translateY(-2px);
+				}
+
+				.solar-logo a:hover {
+					box-shadow: none;
+				}
+			}
 		}
 	}
 	//!footer
