@@ -1,6 +1,4 @@
-import "./css/style.scss";
-
-let device = null;
+import "../css/style.scss";
 
 //console.log(`Hello`);
 

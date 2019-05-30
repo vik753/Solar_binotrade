@@ -1,4 +1,29 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,400i,500,600,700,800,900&display=swap);
+/*@include font-face('Proxima Nova', '../fonts/proximaNova/ProximaNova');
+@include font-face('Proxima Nova Light', '../fonts/proximaNova/ProximaNovaLight');
+@include font-face('Proxima Nova Bold', '../fonts/proximaNova/ProximaNovaBold');*/
+@font-face {
+  font-family: "Raleway";
+  src: url(fonts/Raleway-Regular-84ab.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Raleway Light";
+  src: url(fonts/Raleway-Light-353e.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Raleway Bold";
+  src: url(fonts/Raleway-Bold-2f99.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+* {
+  font-family: 'Raleway', sans-serif;
+  box-sizing: border-box;
+  transition: 0.3s ease; }
+
 html,
 body,
 p,
@@ -447,11 +472,6 @@ td,
 th {
   padding: 0; }
 
-* {
-  font-family: "Raleway", sans-serif;
-  box-sizing: border-box;
-  transition: 0.3s ease; }
-
 @-webkit-keyframes menu_appear {
   0% {
     height: 0px; }
@@ -478,7 +498,7 @@ th {
     padding: 0 11px 11px 11px;
     position: relative; }
   .main-wrapper .block-one {
-    background: url(img/9dbd253742917d2925674fa703b19796.png) no-repeat center;
+    background: url(img/block1-bg-9dbd.png) no-repeat center;
     background-size: cover;
     padding-top: 20px;
     margin-bottom: 440px; }
@@ -496,7 +516,7 @@ th {
           display: block;
           width: 20px;
           height: 20px;
-          background: url(img/1e065fbc2c7f2843d2b4c283e1561b27.png) no-repeat center; }
+          background: url(img/binotrade_logo-1-1e06.png) no-repeat center; }
         .main-wrapper .block-one .logo-wrapper .logo .logo-2 {
           font-size: 25px;
           font-weight: 800;
@@ -624,16 +644,16 @@ th {
             display: block;
             width: 52px;
             height: 52px;
-            background: url(img/3e64492add1dd1a33de392fab3391c73.png) no-repeat center;
+            background: url(img/horse-3e64.png) no-repeat center;
             background-size: contain; }
         .main-wrapper .block-one .float-block .float-block_inner:nth-of-type(2) > p > span {
-          background: url(img/1b60456192164a1283a23d5f5fe36fcf.png) no-repeat center;
+          background: url(img/rocket-1b60.png) no-repeat center;
           background-size: contain; }
         .main-wrapper .block-one .float-block .float-block_inner:nth-of-type(3) > p > span {
-          background: url(img/a54ac0eb6aef4b88236dffbd89c8c5d8.png) no-repeat center;
+          background: url(img/arrow_up-a54a.png) no-repeat center;
           background-size: contain; }
         .main-wrapper .block-one .float-block .float-block_inner:nth-of-type(4) > p > span {
-          background: url(img/03fb48854f2ace3a4b7440b75ff7a2f9.png) no-repeat center;
+          background: url(img/profit-03fb.png) no-repeat center;
           background-size: contain; }
   .main-wrapper .block-two {
     width: 100%;
@@ -693,7 +713,7 @@ th {
           .main-wrapper .block-two .tabs .tab1 .tab1-right .tab1-img1 {
             width: 100%;
             height: 100%;
-            background: url(img/aeedb32a6e612189f2034cda2e284a13.png) no-repeat center;
+            background: url(img/purse-aeed.png) no-repeat center;
             background-size: contain;
             z-index: 2; }
     .main-wrapper .block-two .cloud-big {
@@ -703,7 +723,7 @@ th {
       left: 0;
       width: 155px;
       height: 130px;
-      background: url(img/9999f587231f90f33941af5839229e4d.png) no-repeat center;
+      background: url(img/cloud-big-9999.png) no-repeat center;
       background-size: contain;
       z-index: 0; }
     .main-wrapper .block-two .blue-ball {
@@ -713,7 +733,7 @@ th {
       left: -36px;
       width: 90px;
       height: 90px;
-      background: url(img/1678d283e8acd6ac5253a114ae1ef353.png) no-repeat center;
+      background: url(img/10-blue-ball-1678.png) no-repeat center;
       background-size: contain;
       z-index: 0; }
     .main-wrapper .block-two .red-ball {
@@ -723,7 +743,7 @@ th {
       right: 15px;
       width: 33px;
       height: 33px;
-      background: url(img/619a3d95b706ca85b59741c0d541e039.png) no-repeat center;
+      background: url(img/10-red-ball-619a.png) no-repeat center;
       background-size: contain;
       z-index: 0; }
     .main-wrapper .block-two .baks-green-ball {
@@ -733,7 +753,7 @@ th {
       left: 0;
       width: 45px;
       height: 41px;
-      background: url(img/55b49d1e5ff9693824d2ee558607e991.png) no-repeat center;
+      background: url(img/baks-green-ball-55b4.png) no-repeat center;
       background-size: contain;
       z-index: 0; }
     .main-wrapper .block-two .baks-orange-ball {
@@ -743,7 +763,7 @@ th {
       right: 15px;
       width: 30px;
       height: 26px;
-      background: url(img/976f2b40942eaac12c158406da3a211c.png) no-repeat center;
+      background: url(img/baks-orange-ball-976f.png) no-repeat center;
       background-size: contain;
       z-index: 0; }
     .main-wrapper .block-two .cloud-small {
@@ -753,7 +773,7 @@ th {
       left: 19%;
       width: 101px;
       height: 53px;
-      background: url(img/72c7e17c83e6634e98dae5a5c20071fd.png) no-repeat center;
+      background: url(img/cloud-small-72c7.png) no-repeat center;
       background-size: contain;
       z-index: 0; }
   .main-wrapper .block-three {
@@ -770,46 +790,46 @@ th {
       width: 46%;
       height: 25px;
       margin: 15px 2%;
-      background: url(img/53e77c6af6402325d701c6505daef4b5.png) no-repeat center;
+      background: url(img/badoo-53e7.png) no-repeat center;
       background-size: contain; }
       .main-wrapper .block-three .block-three_img:nth-of-type(2) {
-        background: url(img/1d6e26f698ed8d8e107c14e191b8298f.png) no-repeat center;
+        background: url(img/tesla-1d6e.png) no-repeat center;
         background-size: contain;
         height: 19px; }
       .main-wrapper .block-three .block-three_img:nth-of-type(3) {
-        background: url(img/9cb6ad1421844a0b78d7be02e8142caf.png) no-repeat center;
+        background: url(img/gillete-9cb6.png) no-repeat center;
         background-size: contain;
         height: 26px; }
       .main-wrapper .block-three .block-three_img:nth-of-type(4) {
-        background: url(img/62e8b8b6da404af2f139c9f4044dab57.png) no-repeat center;
+        background: url(img/cocacolla-62e8.png) no-repeat center;
         background-size: contain;
         height: 34px; }
       .main-wrapper .block-three .block-three_img:nth-of-type(5) {
-        background: url(img/99b8551a0df53e7c8921c3a9300cb31d.png) no-repeat center;
+        background: url(img/netflix-99b8.png) no-repeat center;
         background-size: contain;
         height: 27px; }
       .main-wrapper .block-three .block-three_img:nth-of-type(6) {
-        background: url(img/9d8df14bc5a25ed9d3435ab002f5c694.png) no-repeat center;
+        background: url(img/microsoft-9d8d.png) no-repeat center;
         background-size: contain;
         height: 33px; }
       .main-wrapper .block-three .block-three_img:nth-of-type(7) {
-        background: url(img/c158d1db6c62ad71133e8223b51afe85.png) no-repeat center;
+        background: url(img/disnay-c158.png) no-repeat center;
         background-size: contain;
         height: 49px; }
       .main-wrapper .block-three .block-three_img:nth-of-type(8) {
-        background: url(img/4fe16756e70f761f7877eded23d145d1.png) no-repeat center;
+        background: url(img/facebook-4fe1.png) no-repeat center;
         background-size: contain;
         height: 28px; }
       .main-wrapper .block-three .block-three_img:nth-of-type(9) {
-        background: url(img/1f14e89dba2b07e35b127133ae830f6e.png) no-repeat center;
+        background: url(img/google-1f14.png) no-repeat center;
         background-size: contain;
         height: 37px; }
       .main-wrapper .block-three .block-three_img:nth-of-type(10) {
-        background: url(img/274b8085b4274d99b0f6f88d5861d7c8.png) no-repeat center;
+        background: url(img/toyota-274b.png) no-repeat center;
         background-size: contain;
         height: 21px; }
   .main-wrapper .block-four {
-    background: url(img/7cb39229c1f97d335b6ce65ef7566365.png) no-repeat -15px center;
+    background: url(img/block-four-bg-7cb3.png) no-repeat -15px center;
     background-size: cover;
     margin-bottom: 60px;
     height: 550px;
@@ -825,7 +845,7 @@ th {
         font-size: 14px;
         padding: 0; }
     .main-wrapper .block-four .block-four-img1 {
-      background: url(img/ed365dda11097e746fe387c219d542a4.png) no-repeat center;
+      background: url(img/mob_phone1-ed36.png) no-repeat center;
       background-size: 100% auto;
       width: 18%;
       height: 662px;
@@ -833,7 +853,7 @@ th {
       top: -186px;
       right: 27%; }
     .main-wrapper .block-four .block-four-img2 {
-      background: url(img/7ffa3a06a5fe1e8ab5bdaa39d1ee9b2d.png) no-repeat center;
+      background: url(img/mob_phone2-7ffa.png) no-repeat center;
       background-size: 100% auto;
       width: 18%;
       height: 667px;
@@ -858,7 +878,7 @@ th {
     display: flex;
     flex-wrap: wrap;
     padding: 120px 11px 50px;
-    background: url(img/08b1622ad05e4c7da46c66271901cc5c.png) no-repeat center;
+    background: url(img/footer-bg-08b1.png) no-repeat center;
     background-size: cover; }
     .main-wrapper .footer .left {
       flex-basis: 100%;
@@ -887,13 +907,13 @@ th {
         margin-right: 11px;
         margin-bottom: 11px; }
         .main-wrapper .footer .right .inner-right .appStore_img {
-          background: url(img/ece3b408c7749a3c1046061b239b6b5b.png) no-repeat top;
+          background: url(img/app_store-ece3.png) no-repeat top;
           background-size: 100% auto;
           width: 125px;
           height: 38px;
           margin-right: 11px; }
         .main-wrapper .footer .right .inner-right .googplePlay_img {
-          background: url(img/590847ff848c284e18dfad311ff7dec6.png) no-repeat top;
+          background: url(img/googleplay-5908.png) no-repeat top;
           background-size: 100% auto;
           width: 125px;
           height: 38px; }
@@ -913,31 +933,31 @@ th {
             margin-right: 0; }
           .main-wrapper .footer .right .inner-left .social a:nth-of-type(1) > span {
             display: block;
-            background: url(img/4e868de0dc4066ad74db8b9d1d28b812.png) no-repeat center;
+            background: url(img/facebook-logo-4e86.png) no-repeat center;
             background-size: cover;
             width: 8px;
             height: 16px; }
           .main-wrapper .footer .right .inner-left .social a:nth-of-type(2) > span {
             display: block;
-            background: url(img/4f9ab7f38e6525d196f509b299bdb071.png) no-repeat center;
+            background: url(img/vk-4f9a.png) no-repeat center;
             background-size: cover;
             width: 18px;
             height: 10px; }
           .main-wrapper .footer .right .inner-left .social a:nth-of-type(3) > span {
             display: block;
-            background: url(img/52d2ecbfa3d36bf856556a6a49797673.png) no-repeat center;
+            background: url(img/twitter-logo-52d2.png) no-repeat center;
             background-size: cover;
             width: 16px;
             height: 13px; }
           .main-wrapper .footer .right .inner-left .social a:nth-of-type(4) > span {
             display: block;
-            background: url(img/91337b55488148432ff9fdcd1794dbef.png) no-repeat center;
+            background: url(img/google-plus-9133.png) no-repeat center;
             background-size: cover;
             width: 19px;
             height: 12px; }
       .main-wrapper .footer .right .inner-left .solar-logo a {
         display: block;
-        background: url(img/97d5822e81bffc485dbdf6a7bb1c6e1c.png) no-repeat center;
+        background: url(img/solar_logo-97d5.png) no-repeat center;
         background-size: cover;
         width: 163px;
         height: 31px; }
@@ -1059,7 +1079,7 @@ th {
       height: 25px;
       margin: 15px 2%; }
   .main-wrapper .block-four {
-    background: url(img/7cb39229c1f97d335b6ce65ef7566365.png) no-repeat -50px center;
+    background: url(img/block-four-bg-7cb3.png) no-repeat -50px center;
     background-size: 100% auto;
     height: 1050px; }
     .main-wrapper .block-four .left {

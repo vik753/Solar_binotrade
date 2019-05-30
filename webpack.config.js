@@ -4,14 +4,15 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackMd5Hash = require('webpack-md5-hash');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const webpack = require('webpack');
 
 module.exports = {
   entry: {
-    main: './src/index.js'
+    main: './src/js/index.js'
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].[chunkhash].js'
+    filename: 'js/[chunkhash:4].[name].js'
   },
   module: {
     rules: [{
@@ -32,12 +33,25 @@ module.exports = {
         ]
       },
       {
+        test: /\.(eot|woff|ttf|svg)$/,
+        exclude: /(node_modules|images)/,
+        use: [
+            {
+                loader: 'file-loader',
+                options: {
+                    name: 'fonts/[name]-[hash:4].[ext]'
+                }
+            }
+        ]
+      },
+      {
         test: /\.(png|jpe?g|gif|svg)$/,
+        exclude: /node_modules/,
         use: [
           {
             loader: 'file-loader',
             options: {
-              outputPath: 'img',
+              name: 'img/[name]-[hash:4].[ext]',
             },
           },
         ],
@@ -46,7 +60,8 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'style.[contenthash].css',
+      filename: './[name].styles.min.css',
+       sourceMap: true
     }),
     new HtmlWebpackPlugin({
       hash: true,

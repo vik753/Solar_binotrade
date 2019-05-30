@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/index.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/js/index.js");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -130,15 +130,15 @@ eval("\nvar content = __webpack_require__(/*! !../../node_modules/mini-css-extra
 
 /***/ }),
 
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
+/***/ "./src/js/index.js":
+/*!*************************!*\
+  !*** ./src/js/index.js ***!
+  \*************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./css/style.scss */ \"./src/css/style.scss\");\n/* harmony import */ var _css_style_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_style_scss__WEBPACK_IMPORTED_MODULE_0__);\n\nvar device = null; //console.log(`Hello`);\n//menu mobile\n\nvar menuMobile = document.getElementById('menu-mobile');\nvar arrow = document.getElementById('arrow');\nvar menu = document.getElementById('menu');\n\nmenuMobile.onclick = function () {\n  arrow.classList.toggle('open');\n  menu.classList.toggle('open');\n}; //block two tabs toogle\n\n\nvar tabHeader1 = document.getElementById('tab-header1');\nvar tabHeader2 = document.getElementById('tab-header2');\nvar tabHeader3 = document.getElementById('tab-header3');\nvar tabHeader4 = document.getElementById('tab-header4');\nvar tabHeaders = [tabHeader1, tabHeader2, tabHeader3, tabHeader4];\nvar tab1 = document.getElementById('tab1');\nvar tab2 = document.getElementById('tab2');\nvar tab3 = document.getElementById('tab3');\nvar tab4 = document.getElementById('tab4');\nvar tabs = [tab1, tab2, tab3, tab4];\n\ntabHeader1.onclick = function () {\n  tabTrigger(this);\n};\n\ntabHeader2.onclick = function () {\n  tabTrigger(this);\n};\n\ntabHeader3.onclick = function () {\n  tabTrigger(this);\n};\n\ntabHeader4.onclick = function () {\n  tabTrigger(this);\n};\n\nvar tabTrigger = function tabTrigger(el) {\n  //console.log(el);\n  tabs.forEach(function (e) {\n    e.classList.remove('active');\n  });\n  el.classList.add('active');\n\n  if (el === tabHeader1) {\n    tab1.classList.add('active');\n  } else if (el === tabHeader2) {\n    tab2.classList.add('active');\n  } else if (el === tabHeader3) {\n    tab3.classList.add('active');\n  } else {\n    tab4.classList.add('active');\n  }\n\n  tabHeaders.forEach(function (e) {\n    e.classList.remove('active');\n  });\n  el.classList.add('active');\n};\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/style.scss */ \"./src/css/style.scss\");\n/* harmony import */ var _css_style_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_style_scss__WEBPACK_IMPORTED_MODULE_0__);\n //console.log(`Hello`);\n//menu mobile\n\nvar menuMobile = document.getElementById('menu-mobile');\nvar arrow = document.getElementById('arrow');\nvar menu = document.getElementById('menu');\n\nmenuMobile.onclick = function () {\n  arrow.classList.toggle('open');\n  menu.classList.toggle('open');\n}; //block two tabs toogle\n\n\nvar tabHeader1 = document.getElementById('tab-header1');\nvar tabHeader2 = document.getElementById('tab-header2');\nvar tabHeader3 = document.getElementById('tab-header3');\nvar tabHeader4 = document.getElementById('tab-header4');\nvar tabHeaders = [tabHeader1, tabHeader2, tabHeader3, tabHeader4];\nvar tab1 = document.getElementById('tab1');\nvar tab2 = document.getElementById('tab2');\nvar tab3 = document.getElementById('tab3');\nvar tab4 = document.getElementById('tab4');\nvar tabs = [tab1, tab2, tab3, tab4];\n\ntabHeader1.onclick = function () {\n  tabTrigger(this);\n};\n\ntabHeader2.onclick = function () {\n  tabTrigger(this);\n};\n\ntabHeader3.onclick = function () {\n  tabTrigger(this);\n};\n\ntabHeader4.onclick = function () {\n  tabTrigger(this);\n};\n\nvar tabTrigger = function tabTrigger(el) {\n  //console.log(el);\n  tabs.forEach(function (e) {\n    e.classList.remove('active');\n  });\n  el.classList.add('active');\n\n  if (el === tabHeader1) {\n    tab1.classList.add('active');\n  } else if (el === tabHeader2) {\n    tab2.classList.add('active');\n  } else if (el === tabHeader3) {\n    tab3.classList.add('active');\n  } else {\n    tab4.classList.add('active');\n  }\n\n  tabHeaders.forEach(function (e) {\n    e.classList.remove('active');\n  });\n  el.classList.add('active');\n};\n\n//# sourceURL=webpack:///./src/js/index.js?");
 
 /***/ })
 

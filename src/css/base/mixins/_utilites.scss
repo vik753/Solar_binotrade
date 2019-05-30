@@ -1,4 +1,25 @@
-
+//use when font has all types -> .eot + .svg + .ttf
+@mixin font-face($style-name, $filepath) {
+	@font-face {
+		font-family: "#{$style-name}";
+		src: url($filepath + '.eot');
+		src: url($filepath + '.eot?#iefix') format('embedded-opentype'),
+		url($filepath + '.woff') format('woff'),
+		url($filepath + '.ttf') format('truetype'),
+		url($filepath + '.svg') format('svg');
+		font-weight: normal;
+		font-style: normal;
+	}
+}
+//use when font has only .ttf
+@mixin font-face-ttf($style-name, $filepath) {
+	@font-face {
+		font-family: "#{$style-name}";
+		src: url($filepath + '.ttf') format('truetype');
+		font-weight: normal;
+		font-style: normal;
+	}
+}
 
 @mixin box-sizing($val){
   -webkit-box-sizing:$val;

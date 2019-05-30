@@ -1,6 +1,13 @@
 //fonts
-$google-font: 'https://fonts.googleapis.com/css?family=Raleway:300,400,400i,500,600,700,800,900&display=swap';
-$raleway: 'Raleway', sans-serif;
+//$google-font: 'https://fonts.googleapis.com/css?family=Raleway:300,400,400i,500,600,700,800,900&display=swap';
+
+/*@include font-face('Proxima Nova', '../fonts/proximaNova/ProximaNova');
+@include font-face('Proxima Nova Light', '../fonts/proximaNova/ProximaNovaLight');
+@include font-face('Proxima Nova Bold', '../fonts/proximaNova/ProximaNovaBold');*/
+
+@include font-face-ttf('Raleway', '../fonts/raleway/Raleway-Regular');
+@include font-face-ttf('Raleway Light', '../fonts/raleway/Raleway-Light');
+@include font-face-ttf('Raleway Bold', '../fonts/raleway/Raleway-Bold');
 
 //Font-sizes
 $baseFontSize: 16px;
@@ -14,7 +21,7 @@ $img: "../img/";
 
 //========= for ALL===========
 * {
-  font-family: $raleway;
-  box-sizing: border-box;
-  transition: 0.3s ease;
+	font-family: 'Raleway', sans-serif;
+	box-sizing: border-box;
+	transition: 0.3s ease;
 }
